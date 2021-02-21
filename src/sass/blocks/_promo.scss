@@ -1,0 +1,28 @@
+.promo {
+    height: 800px;
+    position: relative;
+    background: url('../img/main-bg.jpg') no-repeat 50% / cover;
+    padding-top: 205px;
+    &__title {
+        margin-top: 10px;
+        width: 540px;
+    }
+    &__subtitle {
+        color: $title-color-1;
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        color: $title-color-1;
+        font-weight: bold;
+        &:hover {
+            color: $title-color-1;
+            text-decoration: none;
+        }
+    }
+}
